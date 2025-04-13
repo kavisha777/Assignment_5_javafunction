@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>  
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <section>
@@ -15,13 +15,23 @@
                     <img src="assets/images/logo.jpg" class="h-20 w-20 ml-30">
                     <p class="p-9 text-2xl">Justice Bridge</p>
                 </div>
+                <button id="themeToggleBtn" onclick="toggleTheme()" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-yellow-500 dark:text-white transition duration-300">
+                    <svg id="themeIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <!-- Moon icon -->
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
+                    </svg>
+                  </button>
+                  
+                  
+                
                 <div class="text-right flex items-center justify-center">
                     <div class="m-4">
                        <p class="text-xl text-blue-900">consultation call</p>
                        <p class="text-4xl text-blue-900 hover:text-red-900">+94 77 123 4567</p>
                     </div>
                     <div>
-                      <a class="text-3xl bg-red-900 ml-10 mr-10 p-5 text-white hover:bg-blue-900 " href="signup.html">Get membership</a>
+                      <a class="text-3xl bg-red-900 ml-10 mr-10 p-5 text-white hover:bg-blue-900 " href="signup.html" id="membershipButton">Get membership</a>
                     </div>
                 </div>
             </div>
@@ -53,28 +63,19 @@
         </nav>
     </section><br><br>
 
-
-
-
-
-
     <header class="text-white" id="home">
         <div class="flex">
             <img src="assets/images/lawyer3.jpg" class="ml-70 mt-20">
             <div class="ml-30 mt-50 text-blue-900 text-center">
             <p class="text-3xl text-center p-19 mr-25">"Committed to safeguarding your interests with professionalism and a personalized approach"</p>
-            <button class="bg-red-900 text-white hover:bg-blue-900 p-5 text-2xl">Appointment<span class="text-2xl">  &rAarr;</span></button>
+            <button class="bg-red-900 text-white hover:bg-blue-900 p-5 text-2xl" id="appointmentButton">Appointment<span class="text-2xl">  &rAarr;</span></button>
             <br><br>
-
         </div>
-        
     </header>
 
-
-<br><br><br><br>
+    <br><br><br><br>
     
-
-     <section class="bg-gray-100" id="work">
+    <section class="bg-gray-100" id="work">
         <br><br>
         <h1 class="text-4xl text-gray-600 text-center">How We Work</h1>
         <div class="flex justify-between space-x-9 p-9">
@@ -100,15 +101,14 @@
             </div>
         </div>
         <button class="bg-red-900 hover:bg-blue-900 text-white p-5 text-2xl ml-200">Get Start Now <span class="text-2xl">&rAarr;</span></button>
-     </section>
-
+    </section>
 
     <section class="bg-gray-100" id="lawfirm">
         <div class="flex">
         <div class="container p-20">
             <h1 class="text-2xl text-gray-600">About Us</h1><br>
             <h1 class="text-4xl text-blue-900">Our Law Office</h1><br>
-            <p class="text-gray-700 text-xl">Welcome to JUSTICE BRIDGE , where legal excellence meets unwavering client commitment. With years of experience in [practice areas], we take pride in delivering strategic, results-driven representation. Whether you are facing a complex legal matter or seeking proactive counsel, our team is dedicated to protecting your interests with professionalism and discretion.</p>
+            <p class="text-gray-700 text-xl">Welcome to JUSTICE BRIDGE, where legal excellence meets unwavering client commitment. With years of experience in [practice areas], we take pride in delivering strategic, results-driven representation. Whether you are facing a complex legal matter or seeking proactive counsel, our team is dedicated to protecting your interests with professionalism and discretion.</p>
             <div class="flex justify-between">
                 <div>
                     <p class="text-4xl transform transition-transform duration-300 hover:scale-110">&#9745; <span class="text-2xl"> Get Your Legal Advice </span></p>
@@ -116,9 +116,9 @@
                     <p class="text-4xl transform transition-transform duration-300 hover:scale-110">&#9745; <span class="text-2xl"> Get The Money You Deserve </span></p>
                 </div>
                 <div>
-                      <p class="text-4xl transform transition-transform duration-300 hover:scale-110">&#9745; <span class="text-2xl"> All Experts Lawyers </span></p>
-                      <p class="text-4xl transform transition-transform duration-300 hover:scale-110">&#9745; <span class="text-2xl"> Fighting for The Average Joe </span></p>
-                      <p class="text-4xl transform transition-transform duration-300 hover:scale-110">&#9745; <span class="text-2xl"> Justice For All </span></p>
+                    <p class="text-4xl transform transition-transform duration-300 hover:scale-110">&#9745; <span class="text-2xl"> All Experts Lawyers </span></p>
+                    <p class="text-4xl transform transition-transform duration-300 hover:scale-110">&#9745; <span class="text-2xl"> Fighting for The Average Joe </span></p>
+                    <p class="text-4xl transform transition-transform duration-300 hover:scale-110">&#9745; <span class="text-2xl"> Justice For All </span></p>
                 </div>
             </div>
             <br><br>
@@ -132,8 +132,6 @@
     </div>
     </section>
 
-
-
     <section class="bg-gray-100" id="team">
         <h1 class="text-center text-gray-600 text-4xl p-3">Our Team</h1><br><br>
         <div class="flex space-x-28">
@@ -144,7 +142,6 @@
         </div>
     </section>
     <br><br>
-
 
     <footer id="contact" id="contact">
         <div class="flex justify-between mx-auto text-blue-900 p-16">
@@ -186,7 +183,8 @@
               <p class="ml-20">&copy; copyright @ 2025 All Rights Reserved</p>
               <p class="mr-20"> Designed By KAVI</p>
         </div>
-  </footer>
-  <script src="app.js"></script>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
